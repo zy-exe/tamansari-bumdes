@@ -4,6 +4,8 @@
 <head>
     <title>Tamansari | {{ $title }}</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Explore the rich culture and stunning landscapes of Tamansari with our immersive travel packages. Book your adventure today for an unforgettable experience!">
+    <meta name="keywords" content="Tamansari Tourism,Ijen,Kawah Ijen, Ijen Crater,Taman Gandrung Terakota,Sendang Seruni,Seruni Tourism,Tamansari,Licin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('img/logo-tamansari.png') }}" type="image/x-icon">
