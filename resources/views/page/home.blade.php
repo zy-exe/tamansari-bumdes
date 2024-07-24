@@ -81,7 +81,7 @@
                 {{-- Package 1 --}}
                 <div class="card card-hover col-12 col-lg-5 col-xl-6 pt-1 px-1" style="max-width: 500px">
                     <a href="https://wa.me/+6282334857609?text=Hello%2C%0A%0AI%27m+interested+in+booking+the+%22Study+to+Tamansari+2%22+package%2C+which+includes%3A%0A*+Learning+Osing+Culture%0A*+Cooking+traditional+food%0A*+Create+beautiful+Batik%0A*+Exploring+Seruni+tourism%0A2+days+%26+1+day+for+Rp+620%2C000+per+person+for+%5BNumber+of+People+%28minimum+of+20+people%29%5D.+Could+you+please+provide+more+details+and+assist+with+the+booking%3F%0A%0AThanks%21" target="_blank" class="text-dark" style="text-decoration: none;">
-                        <img class="card-img-top rounded" src="{{ asset('img/pack-s-1.webp') }}">
+                        <img class="card-img-top rounded" src="{{ asset('img/pack-study-1.webp') }}">
                         <div class="card-body">
                             <h4>Study to Tamansari 1</h4>
                             <p class="text-secondary" style="min-height: 75px">Learn <strong>Osing culture</strong>, Cook
@@ -115,7 +115,7 @@
                 {{-- Package 2 --}}
                 <div class="card card-hover col-12 col-lg-5 col-xl-6 pt-1 px-1" style="max-width: 500px">
                     <a href="https://wa.me/+6282334857609?text=Hello%2C%0A%0AI%27m+interested+in+booking+the+%22Private+Trip+-+Explore+Ijen%22+package%2C+which+includes%3A%0A*+Exploring+Ijen+Crater%0A2+days+%26+1+night+for+Rp+1%2C400%2C000+per+person+for+%5BNumber+of+People+%28minimum+of+1-2+people%29%5D.+Could+you+please+provide+more+details+and+assist+with+the+booking%3F%0A%0AThanks%21" target="_blank" class="text-dark" style="text-decoration: none;">
-                        <img class="card-img-top rounded" src="{{ asset('img/pack-p-ijen.webp') }}">
+                        <img class="card-img-top rounded" src="{{ asset('img/pack-ijen.webp') }}">
                         <div class="card-body">
                             <h4>Private Trip - Explore Ijen</h4>
                             <p class="text-secondary" style="min-height: 75px">Discover the mesmerizing <strong>Ijen Blue Fire</strong>,
