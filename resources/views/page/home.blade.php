@@ -1,14 +1,6 @@
 @extends('layout.main')
 
 @section('content')
-    {{-- Landing Mobile start --}}
-    <div id="landingMobile" class="text-center py-5 px-3 w-100" style="max-height: 500px">
-        <h1 id="txt-lm-1" class="mx-3">Welcome to <br> Tamansari Tourism Village</h1>
-        <h3 id="txt-lm-2">Discover Authentic Cultural Experiences in Tamansari</h3>
-        <a href="/packages" class="btn btn-success p-2 px-3 mt-2">Book your adventure today!</a>
-    </div>
-    {{-- Landing Mobile end --}}
-
     {{-- Carusel start --}}
     <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -21,7 +13,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item bg-dark">
-                <img src="{{ asset('img/car-ijen.webp') }}" class="d-block w-100" alt="Slide Image" style="opacity: 0.5;">
+                <img src="{{ asset('img/car-ijen.png') }}" class="d-block w-100" alt="Slide Image" style="opacity: 0.5;">
 
                 <div class="container">
                     <div class="carousel-caption text-start">
@@ -34,7 +26,7 @@
                 </div>
             </div>
             <div class="carousel-item bg-dark">
-                <img src="{{ asset('img/car-terakota.webp') }}" class="d-block w-100" alt="Slide Image"
+                <img src="{{ asset('img/car-terakota.png') }}" class="d-block w-100" alt="Slide Image"
                     style="opacity: 0.5;">
 
                 <div class="container">
@@ -46,7 +38,7 @@
                 </div>
             </div>
             <div class="carousel-item active bg-dark">
-                <img src="{{ asset('img/car-seruni.webp') }}" class="d-block w-100" alt="Slide Image" style="opacity: 0.5;">
+                <img src="{{ asset('img/car-seruni.png') }}" class="d-block w-100" alt="Slide Image" style="opacity: 0.5;">
 
                 <div class="container">
                     <div class="carousel-caption text-end">
@@ -80,8 +72,8 @@
 
                 {{-- Package 1 --}}
                 <div class="card card-hover col-12 col-lg-5 col-xl-6 pt-1 px-1" style="max-width: 500px">
-                    <a href="https://wa.me/+6282334857609?text=Hello%2C%0A%0AI%27m+interested+in+booking+the+%22Study+to+Tamansari+2%22+package%2C+which+includes%3A%0A*+Learning+Osing+Culture%0A*+Cooking+traditional+food%0A*+Create+beautiful+Batik%0A*+Exploring+Seruni+tourism%0A2+days+%26+1+day+for+Rp+620%2C000+per+person+for+%5BNumber+of+People+%28minimum+of+20+people%29%5D.+Could+you+please+provide+more+details+and+assist+with+the+booking%3F%0A%0AThanks%21" target="_blank" class="text-dark" style="text-decoration: none;">
-                        <img class="card-img-top rounded" src="{{ asset('img/pack-study-1.webp') }}">
+                    <a href="" target="_blank" class="text-dark" style="text-decoration: none;">
+                        <img class="card-img-top rounded" src="{{ asset('img/pack-s-1.png') }}">
                         <div class="card-body">
                             <h4>Study to Tamansari 1</h4>
                             <p class="text-secondary" style="min-height: 75px">Learn <strong>Osing culture</strong>, Cook
@@ -114,8 +106,8 @@
 
                 {{-- Package 2 --}}
                 <div class="card card-hover col-12 col-lg-5 col-xl-6 pt-1 px-1" style="max-width: 500px">
-                    <a href="https://wa.me/+6282334857609?text=Hello%2C%0A%0AI%27m+interested+in+booking+the+%22Private+Trip+-+Explore+Ijen%22+package%2C+which+includes%3A%0A*+Exploring+Ijen+Crater%0A2+days+%26+1+night+for+Rp+1%2C400%2C000+per+person+for+%5BNumber+of+People+%28minimum+of+1-2+people%29%5D.+Could+you+please+provide+more+details+and+assist+with+the+booking%3F%0A%0AThanks%21" target="_blank" class="text-dark" style="text-decoration: none;">
-                        <img class="card-img-top rounded" src="{{ asset('img/pack-ijen.webp') }}">
+                    <a href="" target="_blank" class="text-dark" style="text-decoration: none;">
+                        <img class="card-img-top rounded" src="{{ asset('img/pack-p-ijen.png') }}">
                         <div class="card-body">
                             <h4>Private Trip - Explore Ijen</h4>
                             <p class="text-secondary" style="min-height: 75px">Discover the mesmerizing <strong>Ijen Blue Fire</strong>,
@@ -169,101 +161,41 @@
 
             <div class="row justify-content-center gap-2">
 
-                {{-- Homestay Vivi --}}
+                {{-- Homestay 1 --}}
                 <div class="card card-hover col-12 col-sm-6 col-lg-4 border border-2 px-0" style="max-width: 350px">
-                    <a href="{{ asset('img/hs-vivi-1.webp') }}" class="text-dark" style="text-decoration: none">
-                        <img class="card-img-top" src="{{ asset('img/hs-vivi-1.webp') }}">
-                        {{-- <div hidden>
-                            <a href="{{ asset('img/hs-vivi-2.webp') }}" data-toggle="lightbox" data-gallery="gallery-vivi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-vivi-2.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-vivi-3.webp') }}" data-toggle="lightbox" data-gallery="gallery-vivi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-vivi-3.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-vivi-4.webp') }}" data-toggle="lightbox" data-gallery="gallery-vivi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-vivi-4.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-vivi-5.webp') }}" data-toggle="lightbox" data-gallery="gallery-vivi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-vivi-5.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-vivi-6.webp') }}" data-toggle="lightbox" data-gallery="gallery-vivi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-vivi-6.webp') }}">
-                            </a>
-                        </div> --}}
+                    <a href="" target="_blank" class="text-dark" style="text-decoration: none">
+                        <img class="card-img-top" src="{{ asset('img/hv-gabriel.png') }}">
                         <div class="card-body mx-3">
-                            <h4 class="card-title">Vivi Homestay</h4>
-                            {{-- <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
+                            <h4 class="card-title">Gabriel Homestay</h4>
+                            <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
                                 4.4<small> (747)</small>
-                            </h6> --}}
+                            </h6>
                         </div>
                     </a>
                 </div>
 
-                {{-- Homestay Java --}}
+                {{-- Homestay 2 --}}
                 <div class="card card-hover col-12 col-sm-6 col-lg-4 border border-2 px-0" style="max-width: 350px">
-                    <a href="/homestays" class="text-dark" style="text-decoration: none">
-                        <img class="card-img-top" src="{{ asset('img/hs-java-1.webp') }}">
-                        {{-- <div hidden>
-                            <a href="{{ asset('img/hs-java-1.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-1.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-java-2.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-2.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-java-3.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-3.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-java-4.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-4.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-java-5.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-5.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-java-6.webp') }}" data-toggle="lightbox" data-gallery="gallery-ijen" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-java-6.webp') }}">
-                            </a>
-                        </div> --}}
+                    <a href="" target="_blank" class="text-dark" style="text-decoration: none">
+                        <img class="card-img-top" src="{{ asset('img/hv-gabriel.png') }}">
                         <div class="card-body mx-3">
-                            <h4 class="card-title">Java Ijen Homestay</h4>
-                            {{-- <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
+                            <h4 class="card-title">Gabriel Homestay</h4>
+                            <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
                                 4.4<small> (747)</small>
-                            </h6> --}}
+                            </h6>
                         </div>
                     </a>
                 </div>
 
-                {{-- Homestay Hadi --}}
+                {{-- Homestay 3 --}}
                 <div class="card card-hover col-12 col-sm-6 col-lg-4 border border-2 px-0" style="max-width: 350px">
-                    <a href="{{ asset('img/hs-hadi-1.webp') }}" class="text-dark" style="text-decoration: none">
-                        <img class="card-img-top" src="{{ asset('img/hs-hadi-1.webp') }}">
-                        {{-- <div hidden>
-                            <a href="{{ asset('img/hs-hadi-1.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-1.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-2.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-2.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-3.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-3.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-4.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-4.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-5.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-5.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-6.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-6.webp') }}">
-                            </a>
-                            <a href="{{ asset('img/hs-hadi-7.webp') }}" data-toggle="lightbox" data-gallery="gallery-hadi" data-footer="" hidden>
-                                <img src="{{ asset('img/hs-hadi-7.webp') }}">
-                            </a>
-                        </div> --}}
+                    <a href="" target="_blank" class="text-dark" style="text-decoration: none">
+                        <img class="card-img-top" src="{{ asset('img/hv-gabriel.png') }}">
                         <div class="card-body mx-3">
-                            <h4 class="card-title">Hadi Homestay</h4>
-                            {{-- <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
+                            <h4 class="card-title">Gabriel Homestay</h4>
+                            <h6 class="m-0 text-secondary"><i class="fa fa-star me-1" style="color: #FFD43B;"></i>
                                 4.4<small> (747)</small>
-                            </h6> --}}
+                            </h6>
                         </div>
                     </a>
                 </div>

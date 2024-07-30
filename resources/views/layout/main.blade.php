@@ -4,27 +4,23 @@
 <head>
     <title>Tamansari | {{ $title }}</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore the rich culture and stunning landscapes of Tamansari with our immersive travel packages. Book your adventure today for an unforgettable experience!">
-    <meta name="keywords" content="Tamansari Tourism,Ijen,Kawah Ijen, Ijen Crater,Taman Gandrung Terakota,Sendang Seruni,Seruni Tourism,Tamansari,Licin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('img/logo-tamansari.png') }}" type="image/x-icon">
 
-    {{-- Bootstrap --}}
+    {{-- CDN Bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-    {{-- Google Web Fonts --}}
+    {{-- CDN Google Web Fonts --}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    {{-- Font Awesome --}}
+    {{-- CDN Font Awesome --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    {{-- Ekko Lightbox --}}
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
-    {{-- Customized Bootstrap Stylesheet --}}
-    {{-- <link href="css/style.css" rel="stylesheet"> --}}
+    {{-- CDN Lightbox lightgallery.js --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
 
     <style>
         .card {
@@ -106,30 +102,6 @@
         .price-text-2 {
             font-size: 8px;
         }
-        #txt-lm-1 {
-            font-size: 40px;
-            font-weight: bolder;
-        }
-        @media (max-width: 415px) {
-            #txt-lm-1 {
-            font-size: 30px;
-            font-weight: bolder;
-            }
-            #txt-lm-2 {
-            font-size: 13px;
-            }
-        }
-        #txt-lm-2 {
-            font-size: 18px;
-        }
-
-        #myCarousel {
-            display: none;
-        }
-
-        #landingMobile {
-            display: block;
-        }
 
         @media (min-width: 375px) {
             .price-text {
@@ -158,14 +130,6 @@
         @media (min-width: 768px) {
             .btn-more-div {
                 width: 80%;
-            }
-
-            #myCarousel {
-                display: block;
-            }
-
-            #landingMobile {
-                display: none;
             }
         }
 
@@ -203,7 +167,7 @@
     {{-- Footer --}}
 
     {{-- Floating Button start --}}
-    <a href="https://wa.me/+6282334857609?text=Hello,%20I'm%20interested%20in%20your%20trip%20packages%2C%20especially%20those%20visiting%20Ijen%20Crater%2C%20Sendang%20Seruni%2C%20and%20Taman%20Gandrung%20Terakota.%20Could%20you%20please%20provide%20more%20details?"
+    <a href="https://wa.me/+6282334857609?text=Permisi%20mau%20tanya"
         class="btn btn-success btn-floating btn-wa-hover rounded-circle" target="_blank" style="height: 65px">
         <i class="fab fa-whatsapp fa-2xl m-2"></i>
     </a>
@@ -217,9 +181,12 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 
-    {{-- Lightbox --}}
-    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <!-- CDN Lightbox lightgallery.js -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
 
+    <script>
+        lightGallery(document.getElementById('dest-gallery'));
+    </script>
 </body>
 
 </html>
