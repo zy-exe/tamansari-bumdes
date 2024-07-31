@@ -18,17 +18,17 @@
 
             {{-- Lightbox --}}
             <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="dest-gallery">
-                <a href="{{ asset('img/dest-ijen-1.png') }}" data-sub-html="<h4>Tosca Lake of Ijen</h4><p>Explore Tosca Lake in Ijen Crater, where stunning turquoise waters set amidst volcanic landscapes create a breathtaking adventure for nature enthusiasts.</p>">
-                    <img src="{{ asset('img/dest-ijen-1.png') }}" class="rounded w-100 mb-2 img-gallery">
+                <a href="{{ asset('img/dest-ijen-1.webp') }}" data-sub-html="<h4>Tosca Lake of Ijen</h4><p>Explore Tosca Lake in Ijen Crater, where stunning turquoise waters set amidst volcanic landscapes create a breathtaking adventure for nature enthusiasts.</p>">
+                    <img src="{{ asset('img/dest-ijen-1.webp') }}" class="rounded w-100 mb-2 img-gallery">
                 </a>
-                <a href="{{ asset('img/dest-ijen-2.png') }}" data-sub-html="<h4>Tosca Lake of Ijen</h4><p>Explore Tosca Lake in Ijen Crater, where stunning turquoise waters set amidst volcanic landscapes create a breathtaking adventure for nature enthusiasts.</p>" class="col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-ijen-2.png') }}" class="rounded w-100 mb-2 img-gallery">
+                <a href="{{ asset('img/dest-ijen-2.webp') }}" data-sub-html="<h4>Tosca Lake of Ijen</h4><p>Explore Tosca Lake in Ijen Crater, where stunning turquoise waters set amidst volcanic landscapes create a breathtaking adventure for nature enthusiasts.</p>" class="col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-ijen-2.webp') }}" class="rounded w-100 mb-2 img-gallery">
                 </a>
-                <a href="{{ asset('img/dest-ijen-3.png') }}" data-sub-html="<h4>Blue Fire</h4><p>Witness the rare and captivating blue flames of Ijen, a natural wonder caused by igniting sulfur gases, offering a truly unique and otherworldly experience for adventurers.</p>" class="col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-ijen-3.png') }}" class="rounded w-100 mb-2 img-gallery">
+                <a href="{{ asset('img/dest-ijen-3.webp') }}" data-sub-html="<h4>Blue Fire</h4><p>Witness the rare and captivating blue flames of Ijen, a natural wonder caused by igniting sulfur gases, offering a truly unique and otherworldly experience for adventurers.</p>" class="col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-ijen-3.webp') }}" class="rounded w-100 mb-2 img-gallery">
                 </a>
-                <a href="{{ asset('img/dest-ijen-4.png') }}" data-sub-html="<h4>Blue Fire</h4><p>Witness the rare and captivating blue flames of Ijen, a natural wonder caused by igniting sulfur gases, offering a truly unique and otherworldly experience for adventurers.</p>" class="col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-ijen-4.png') }}" class="rounded w-100 mb-2 img-gallery">
+                <a href="{{ asset('img/dest-ijen-4.webp') }}" data-sub-html="<h4>Blue Fire</h4><p>Witness the rare and captivating blue flames of Ijen, a natural wonder caused by igniting sulfur gases, offering a truly unique and otherworldly experience for adventurers.</p>" class="col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-ijen-4.webp') }}" class="rounded w-100 mb-2 img-gallery">
                 </a>
             </div>
 

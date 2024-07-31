@@ -102,6 +102,30 @@
         .price-text-2 {
             font-size: 8px;
         }
+        #txt-lm-1 {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        @media (max-width: 415px) {
+            #txt-lm-1 {
+            font-size: 30px;
+            font-weight: bolder;
+            }
+            #txt-lm-2 {
+            font-size: 13px;
+            }
+        }
+        #txt-lm-2 {
+            font-size: 18px;
+        }
+
+        #myCarousel {
+            display: none;
+        }
+
+        #landingMobile {
+            display: block;
+        }
 
         @media (min-width: 375px) {
             .price-text {
@@ -130,6 +154,14 @@
         @media (min-width: 768px) {
             .btn-more-div {
                 width: 80%;
+            }
+
+            #myCarousel {
+                display: block;
+            }
+
+            #landingMobile {
+                display: none;
             }
         }
 

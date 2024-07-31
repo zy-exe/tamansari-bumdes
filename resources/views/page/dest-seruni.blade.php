@@ -18,17 +18,17 @@
 
             {{-- Lightbox --}}
             <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="dest-gallery">
-                <a href="{{ asset('img/dest-seruni-1.png') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>">
-                    <img src="{{ asset('img/dest-seruni-1.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-seruni-1.webp') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>">
+                    <img src="{{ asset('img/dest-seruni-1.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-seruni-2.png') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-seruni-2.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-seruni-2.webp') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-seruni-2.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-seruni-3.png') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-seruni-3.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-seruni-3.webp') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-seruni-3.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-seruni-4.png') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-seruni-4.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-seruni-4.webp') }}" data-sub-html="<h4>Sendang Seruni</h4><p>Discover Sendang Seruni, a serene mountain spring surrounded by lush greenery, offering a tranquil escape and a refreshing retreat for hikers and nature lovers.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-seruni-4.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
             </div>
 

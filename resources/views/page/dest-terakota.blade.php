@@ -18,17 +18,17 @@
 
             {{-- Lightbox --}}
             <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="dest-gallery">
-                <a href="{{ asset('img/dest-terakota-1.png') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>">
-                    <img src="{{ asset('img/dest-terakota-1.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-terakota-1.webp') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>">
+                    <img src="{{ asset('img/dest-terakota-1.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-terakota-2.png') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-terakota-2.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-terakota-2.webp') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-terakota-2.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-terakota-3.png') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-terakota-3.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-terakota-3.webp') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-terakota-3.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
-                <a href="{{ asset('img/dest-terakota-4.png') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
-                    <img src="{{ asset('img/dest-terakota-4.png') }}" class="img-gallery rounded w-100 mb-2">
+                <a href="{{ asset('img/dest-terakota-4.webp') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>" class="rounded col-4 me-1" style="max-width: 32%">
+                    <img src="{{ asset('img/dest-terakota-4.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>
             </div>
 
