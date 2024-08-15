@@ -21,7 +21,8 @@
 
     {{-- CDN Lightbox lightgallery.js --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-transitions.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-transitions.min.css" />
 
     <style>
         .card {
@@ -204,10 +205,10 @@
     {{-- Footer --}}
 
     {{-- Floating Button start --}}
-    <a href="https://wa.me/+6282334857609?text=Permisi%20mau%20tanya"
+    {{-- <a href="https://wa.me/+6282334857609?text=Permisi%20mau%20tanya"
         class="btn btn-success btn-floating btn-wa-hover rounded-circle" target="_blank" style="height: 65px">
         <i class="fab fa-whatsapp fa-2xl m-2"></i>
-    </a>
+    </a> --}}
     {{-- Floating Button end --}}
 
     <!-- JavaScript Libraries -->
@@ -218,7 +219,7 @@
 
     <!-- CDN Lightbox lightgallery.js -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
-    
+
     <script>
         // gallery for destinations
         lightGallery(document.getElementById('gallery-dest'), {
@@ -239,6 +240,15 @@
             mode: 'lg-zoom-out',
         });
     </script>
+
+    {{-- chatbase chatbot --}}
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "KHXcBw15L7HAG94j3LnV1",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="KHXcBw15L7HAG94j3LnV1" domain="www.chatbase.co" defer></script>
 </body>
 
 </html>

@@ -14,22 +14,22 @@
                 {{-- Homestay Vivi --}}
                 <div class="d-flex flex-column align-items-center col-12 col-md-6 col-lg-4 px-0 mb-4" style="max-width: 350px">
                     <div class="card card-hover" id="gallery-homestay-1">
-                        <a href="{{ asset('img/hs-vivi-1.webp') }}" data-sub-html="">
+                        <a href="{{ asset('img/hs-vivi-1.webp') }}" data-sub-html="<h3>Terrace</h3>">
                             <img src="{{ asset('img/hs-vivi-1.webp') }}" class="card-img-top img-gallery">
                         </a>
-                        <a href="{{ asset('img/hs-vivi-2.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-vivi-2.webp') }}" data-sub-html="<h3>Entrance</h3>" hidden>
                             <img src="{{ asset('img/hs-vivi-2.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-vivi-3.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-vivi-3.webp') }}" data-sub-html="<h3>Double bed room</h3>" hidden>
                             <img src="{{ asset('img/hs-vivi-3.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-vivi-4.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-vivi-4.webp') }}" data-sub-html="<h3>Twin bed room</h3>" hidden>
                             <img src="{{ asset('img/hs-vivi-4.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-vivi-5.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-vivi-5.webp') }}" data-sub-html="<h3>Bathroom</h3>" hidden>
                             <img src="{{ asset('img/hs-vivi-5.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-vivi-6.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-vivi-6.webp') }}" data-sub-html="<h3>Front yard</h3>" hidden>
                             <img src="{{ asset('img/hs-vivi-6.webp') }}">
                         </a>
                     </div>
@@ -39,22 +39,22 @@
                 {{-- Homestay Java --}}
                 <div class="d-flex flex-column align-items-center col-12 col-md-6 col-lg-4 px-0 mb-4" style="max-width: 350px">
                     <div class="card card-hover" style="max-width: 350px" id="gallery-homestay-2">
-                        <a href="{{ asset('img/hs-java-1.webp') }}" data-sub-html="">
+                        <a href="{{ asset('img/hs-java-1.webp') }}" data-sub-html="<h3>Terrace</h3>">
                             <img src="{{ asset('img/hs-java-1.webp') }}" class="card-img-top img-gallery">
                         </a>
-                        <a href="{{ asset('img/hs-java-2.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-java-2.webp') }}" data-sub-html="<h3>Terrace</h3>" hidden>
                             <img src="{{ asset('img/hs-java-2.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-java-3.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-java-3.webp') }}" data-sub-html="<h3>Bedroom</h3>" hidden>
                             <img src="{{ asset('img/hs-java-3.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-java-4.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-java-4.webp') }}" data-sub-html="<h3>Bedroom</h3>" hidden>
                             <img src="{{ asset('img/hs-java-4.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-java-5.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-java-5.webp') }}" data-sub-html="<h3>Bathroom</h3>" hidden>
                             <img src="{{ asset('img/hs-java-5.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-java-6.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-java-6.webp') }}" data-sub-html="<h3>Front yard</h3>" hidden>
                             <img src="{{ asset('img/hs-java-6.webp') }}">
                         </a>
                     </div>
@@ -64,22 +64,22 @@
                 {{-- Homestay Hadi --}}
                 <div class="d-flex flex-column align-items-center col-12 col-md-6 col-lg-4 px-0 mb-4" style="max-width: 350px">
                     <div class="card card-hover" style="max-width: 350px" id="gallery-homestay-3">
-                        <a href="{{ asset('img/hs-hadi-1.webp') }}" data-sub-html="">
+                        <a href="{{ asset('img/hs-hadi-1.webp') }}" data-sub-html="<h3>Terrace</h3>">
                             <img src="{{ asset('img/hs-hadi-1.webp') }}" class="card-img-top img-gallery">
                         </a>
-                        <a href="{{ asset('img/hs-hadi-2.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-hadi-2.webp') }}" data-sub-html="<h3>Terrace</h3>" hidden>
                             <img src="{{ asset('img/hs-hadi-2.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-hadi-3.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-hadi-3.webp') }}" data-sub-html="<h3>Bedroom</h3>" hidden>
                             <img src="{{ asset('img/hs-hadi-3.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-hadi-4.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-hadi-4.webp') }}" data-sub-html="<h3>Bathroom</h3>" hidden>
                             <img src="{{ asset('img/hs-hadi-4.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-hadi-5.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-hadi-5.webp') }}" data-sub-html="<h3>Entrance</h3>" hidden>
                             <img src="{{ asset('img/hs-hadi-5.webp') }}">
                         </a>
-                        <a href="{{ asset('img/hs-hadi-6.webp') }}" hidden>
+                        <a href="{{ asset('img/hs-hadi-6.webp') }}" data-sub-html="<h3>Fish pond</h3>" hidden>
                             <img src="{{ asset('img/hs-hadi-6.webp') }}">
                         </a>
                     </div>
