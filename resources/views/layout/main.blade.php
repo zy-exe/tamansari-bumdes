@@ -21,6 +21,7 @@
 
     {{-- CDN Lightbox lightgallery.js --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-transitions.min.css" />
 
     <style>
         .card {
@@ -102,19 +103,23 @@
         .price-text-2 {
             font-size: 8px;
         }
+
         #txt-lm-1 {
             font-size: 40px;
             font-weight: bolder;
         }
+
         @media (max-width: 415px) {
             #txt-lm-1 {
-            font-size: 30px;
-            font-weight: bolder;
+                font-size: 30px;
+                font-weight: bolder;
             }
+
             #txt-lm-2 {
-            font-size: 13px;
+                font-size: 13px;
             }
         }
+
         #txt-lm-2 {
             font-size: 18px;
         }
@@ -209,15 +214,30 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- CDN Lightbox lightgallery.js -->
     <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
-
+    
     <script>
-        lightGallery(document.getElementById('dest-gallery'));
+        // gallery for destinations
+        lightGallery(document.getElementById('gallery-dest'), {
+            mode: 'lg-zoom-out',
+        });
+
+        // gallery for homestay
+        lightGallery(document.getElementById('gallery-homestay-1'), {
+            galleryId: 1,
+            mode: 'lg-zoom-out',
+        });
+        lightGallery(document.getElementById('gallery-homestay-2'), {
+            galleryId: 2,
+            mode: 'lg-zoom-out',
+        });
+        lightGallery(document.getElementById('gallery-homestay-3'), {
+            galleryId: 3,
+            mode: 'lg-zoom-out',
+        });
     </script>
 </body>
 

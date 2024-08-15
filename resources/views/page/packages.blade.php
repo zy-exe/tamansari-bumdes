@@ -339,7 +339,7 @@
                                 live performances of the Gandrung dance.
                             </p>
                             <hr>
-                            <div class="row align-items-center px-2">
+                            <div class="row px-2">
                                 <div class="col-6">
                                     <span class="fac-text"><i class="fa-solid fa-circle-check fa-lg me-1 me-sm-3"
                                             style="color: #9ad3ff;"></i>Meal 1x</span> <br>

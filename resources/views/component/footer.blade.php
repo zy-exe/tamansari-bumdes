@@ -7,8 +7,8 @@
         </div>
         <div class="col-md-4">
             <h5 class="text-primary text-uppercase mb-3">Contact Person</h5>
-            <p><i class="fab fa-whatsapp fa-xl me-3"></i>0812-3456-7890</p>
-            <p><i class="fa fa-envelope fa-lg me-3"></i>tamansari@gmail.com</p>
+            <p><i class="fab fa-whatsapp fa-xl me-3"></i>+62 823-3485-7609</p>
+            {{-- <p><i class="fa fa-envelope fa-lg me-3"></i>tamansari@gmail.com</p> --}}
         </div>
         <div class="col-md-4">
             <h5 class="text-primary text-uppercase mb-3">Social Media</h5>

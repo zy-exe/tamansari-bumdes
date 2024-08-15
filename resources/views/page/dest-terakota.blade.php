@@ -17,7 +17,7 @@
             </div>
 
             {{-- Lightbox --}}
-            <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="dest-gallery">
+            <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="gallery-dest">
                 <a href="{{ asset('img/dest-terakota-1.webp') }}" data-sub-html="<h4>Taman Gandrung Terakota</h4><p>Experience Taman Gandrung Terakota, an enchanting cultural park featuring terracotta statues and traditional Banyuwangi dance performances, providing a captivating glimpse into local heritage.</p>">
                     <img src="{{ asset('img/dest-terakota-1.webp') }}" class="img-gallery rounded w-100 mb-2">
                 </a>

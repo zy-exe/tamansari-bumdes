@@ -17,7 +17,7 @@
             </div>
 
             {{-- Lightbox --}}
-            <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="dest-gallery">
+            <div class="d-flex flex-wrap justify-content-center px-1 px-sm-5" id="gallery-dest">
                 <a href="{{ asset('img/dest-ijen-1.webp') }}" data-sub-html="<h4>Tosca Lake of Ijen</h4><p>Explore Tosca Lake in Ijen Crater, where stunning turquoise waters set amidst volcanic landscapes create a breathtaking adventure for nature enthusiasts.</p>">
                     <img src="{{ asset('img/dest-ijen-1.webp') }}" class="rounded w-100 mb-2 img-gallery">
                 </a>
