@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('destination_id');
             $table->string('name');
-            $table->string('desc');
+            $table->text('desc');
             $table->timestamps();
         });
     }

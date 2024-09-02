@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('destinations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('desc');
-            $table->string('invitation');
+            $table->string('slug');
+            $table->text('desc');
+            $table->text('invitation');
             $table->timestamps();
         });
     }

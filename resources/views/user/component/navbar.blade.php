@@ -22,13 +22,13 @@
 
                 {{-- Destinasi Wisata --}}
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle text-light px-4 {{ $title === 'Destinations Ijen' || $title === 'Destinations Terakota' || $title === 'Destinations Seruni' ? 'nav-active' : '' }}" data-toggle="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle text-light px-4 {{ $title === 'Ijen Crater' || $title === 'Gandrung Terracotta Park' || $title === 'Sendang Seruni' ? 'nav-active' : '' }}" data-toggle="dropdown">
                         Destinations
                     </a>
                     <div class="dropdown-menu rounded-0 m-0 bg-dark">
-                        <a href="/destinations-ijen" class="dropdown-item text-light {{ $title === 'Destinations Ijen' ? 'dropdown-active' : '' }}">Ijen Crater</a>
-                        <a href="/destinations-terakota" class="dropdown-item text-light {{ $title === 'Destinations Terakota' ? 'dropdown-active' : '' }}">Taman Gandrung Terakota</a>
-                        <a href="/destinations-seruni" class="dropdown-item text-light {{ $title === 'Destinations Seruni' ? 'dropdown-active' : '' }}">Sendang Seruni</a>
+                        @foreach ($navbar_dests as $navbar_dest)
+                        <a href="/destinations/{{ $navbar_dest->slug }}" class="dropdown-item text-light {{ $title === $navbar_dest->name ? 'dropdown-active' : '' }}">{{ $navbar_dest->name }}</a>    
+                        @endforeach
                     </div>
                 </div>
 

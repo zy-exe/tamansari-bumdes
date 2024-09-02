@@ -1,17 +1,19 @@
 <?php
 
+use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\HomestayController;
+use App\Http\Controllers\PackController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
+// Home
 Route::get('/', [PostController::class, 'show_home']);
 
 // Destinasi Wisata
-Route::get('/destinations-ijen', [PostController::class, 'show_dest_ijen']);
-Route::get('/destinations-terakota', [PostController::class, 'show_dest_terakota']);
-Route::get('/destinations-seruni', [PostController::class, 'show_dest_seruni']);
+Route::get('/destinations/{slug}', [DestinationController::class, 'show_dest']);
 
 // Paket Wisata
-Route::get('/packages', [PostController::class, 'show_packages']);
+Route::get('/packages', [PackController::class, 'show_packages']);
 
 // Homestays
-Route::get('/homestays', [PostController::class, 'show_homestays']);
+Route::get('/homestays', [HomestayController::class, 'show_homestays']);

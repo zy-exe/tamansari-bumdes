@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('homestay_id');
             $table->string('img');
-            $table->string('desc');
+            $table->text('desc');
             $table->timestamps();
         });
     }

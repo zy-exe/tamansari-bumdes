@@ -24,6 +24,12 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-transitions.min.css" />
 
+    {{-- font --}}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+
+    {{-- custom css --}}
     <style>
         .card {
             position: relative;
@@ -103,6 +109,10 @@
 
         .price-text-2 {
             font-size: 8px;
+        }
+
+        #txt-dest-judul {
+            font-family: "Rubik", sans-serif;
         }
 
         #txt-lm-1 {
@@ -193,7 +203,7 @@
 
 <body style="background-color: #eeeeee">
     {{-- Navbar --}}
-    @include('component.navbar')
+    @include('user.component.navbar')
     {{-- Navbar --}}
 
     {{-- Content --}}
@@ -201,7 +211,7 @@
     {{-- Content --}}
 
     {{-- Footer --}}
-    @include('component.footer')
+    @include('user.component.footer')
     {{-- Footer --}}
 
     {{-- Floating Button start --}}

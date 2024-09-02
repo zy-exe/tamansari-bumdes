@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('user.layout.main')
 
 @section('content')
     {{-- Study Pack start --}}

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('destination_id');
             $table->string('img');
             $table->string('title');
-            $table->string('desc');
+            $table->text('desc');
             $table->timestamps();
         });
     }
