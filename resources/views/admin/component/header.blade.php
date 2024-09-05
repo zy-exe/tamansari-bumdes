@@ -5,7 +5,7 @@
             <li class="nav-item topbar-user dropdown hidden-caret">
                 <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                     <div class="avatar-sm">
-                        <img src="kaiadmin/img/profile.jpg" alt="..." class="avatar-img rounded-circle" />
+                        <img src="{{ asset('img/logo-tamansari-sm.png') }}" class="avatar-img" />
                     </div>
                     <span class="profile-username">
                         <span class="op-7">Halo, </span>

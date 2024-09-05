@@ -20,3 +20,12 @@ use App\Http\Controllers\DestinationController;
 // ADMIN
     // dashboard
     Route::get('/admin', [AdminController::class, 'show_dashboard']);
+    // destinasi wisata
+    Route::get('/admin-destinations', [AdminController::class, 'show_destinations']);
+    // paket wisata
+    Route::get('/admin-packages', [AdminController::class, 'show_packages']);
+    // homestay
+    Route::get('/admin-homestays', [AdminController::class, 'show_homestays']);
+    // pesanan
+    Route::get('/admin-orders', [AdminController::class, 'show_orders']);
+    Route::get('/admin-order-insert', [AdminController::class, 'show_order_insert']);

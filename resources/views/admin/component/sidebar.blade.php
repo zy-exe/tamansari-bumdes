@@ -12,32 +12,38 @@
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
             <ul class="nav nav-secondary">
-                <li class="nav-item active">
-                    <a href="#">
+                <li class="nav-item {{ $page === 'dashboard' ? 'active' : '' }}">
+                    <a href="/admin">
                         <i class="fa-solid fa-table-columns"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li class="nav-section">
-                    <span class="sidebar-mini-icon">
-                        <i class="fa fa-ellipsis-h"></i>
-                    </span>
-                    <h4 class="text-section">Menu</h4>
+                    <h4 class="text-section">Reservasi</h4>
                 </li>
-                <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#base">
+                <li class="nav-item {{ $page === 'orders' ? 'active' : '' }}">
+                    <a href="/admin-orders">
+                        <i class="fa-solid fa-address-card"></i>
+                        <p>Pesanan</p>
+                    </a>
+                </li>
+                <li class="nav-section">
+                    <h4 class="text-section">Layanan</h4>
+                </li>
+                <li class="nav-item {{ $page === 'destinations' ? 'active' : '' }}">
+                    <a href="/admin-destinations">
                         <i class="fa-solid fa-person-hiking"></i>
                         <p>Destinasi Wisata</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#sidebarLayouts">
+                <li class="nav-item {{ $page === 'packages' ? 'active' : '' }}">
+                    <a href="/admin-packages">
                         <i class="fa-solid fa-list"></i>
                         <p>Paket Wisata</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#forms">
+                <li class="nav-item {{ $page === 'homestays' ? 'active' : '' }}">
+                    <a href="/admin-homestays">
                         <i class="fa-solid fa-house-chimney"></i>
                         <p>Homestay</p>
                     </a>
