@@ -21,40 +21,33 @@
                             <div id="add-row_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <table id="add-row" class="display table table-striped table-hover dataTable"
-                                            role="grid" aria-describedby="add-row_info">
+                                        <table id="myTable" class="table table-striped table-hover">
                                             <thead>
-                                                <tr role="row">
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        aria-label="Name: activate to sort column ascending">Nama</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        aria-label="Position: activate to sort column ascending">Harga</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        aria-label="Office: activate to sort column ascending">Min Pax</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        aria-label="Action: activate to sort column ascending">Action</th>
+                                                <tr>
+                                                    <th class="text-center" style="width: 35%">Nama</th>
+                                                    <th class="text-center" style="width: 15%">Harga</th>
+                                                    <th class="text-center" style="width: 15%">Min Pax</th>
+                                                    <th class="text-center" style="width: 25%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach ($packages as $package)
-                                                    <tr role="row" class="odd">
-                                                        <td class="sorting_1 fw-bold">{{ $package->name }}</td>
-                                                        <td class="sorting_1 fw-bold">Rp
+                                                    <tr>
+                                                        <td>{{ $package->name }}</td>
+                                                        <td class="text-center">Rp
                                                             {{ number_format($package->price, 0, ',', '.') }}</td>
-                                                        <td class="sorting_1 fw-bold">{{ $package->min_book }}</td>
-                                                        <td>
-                                                            <div class="form-button-action">
-                                                                <button type="button" data-bs-toggle="tooltip"
-                                                                    title="" class="btn btn-link btn-primary btn-lg"
-                                                                    data-original-title="Edit Task">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                                <button type="button" data-bs-toggle="tooltip"
-                                                                    title="" class="btn btn-link btn-danger"
-                                                                    data-original-title="Remove">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                            </div>
+                                                        <td class="text-center">{{ $package->min_book }}</td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-link btn-info">
+                                                                <i class="fa-solid fa-circle-exclamation fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-link btn-secondary">
+                                                                <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-link btn-danger"
+                                                                onclick="confirmDelete('{{ $package->id }}', 'pack')">
+                                                                <i class="fa-solid fa-xmark fa-xl"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 @endforeach

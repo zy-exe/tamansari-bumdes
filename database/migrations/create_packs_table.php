@@ -26,6 +26,7 @@ return new class extends Migration
             $table->integer('fac_meal');
             $table->integer('fac_snack');
             $table->boolean('fac_merchandise');
+            $table->boolean('deleted')->default(false);
             $table->timestamps();
         });
     }

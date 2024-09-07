@@ -72,132 +72,53 @@
                             <div id="add-row_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <table id="add-row" class="display table table-striped table-hover dataTable"
-                                            role="grid" aria-describedby="add-row_info">
+                                        <table id="myTable" class="table table-striped table-hover">
                                             <thead>
-                                                <tr role="row">
-                                                    <th class="sorting_asc" tabindex="0" aria-controls="add-row"
-                                                        rowspan="1" colspan="1" aria-sort="ascending"
-                                                        aria-label="Name: activate to sort column descending"
-                                                        style="width: 71.4375px;">Nama Pemesan</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        rowspan="1" colspan="1"
-                                                        aria-label="Position: activate to sort column ascending"
-                                                        style="width: 75.1406px;">Paket</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        rowspan="1" colspan="1"
-                                                        aria-label="Office: activate to sort column ascending"
-                                                        style="width: 67.25px;">Tanggal</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        rowspan="1" colspan="1"
-                                                        aria-label="Office: activate to sort column ascending"
-                                                        style="width: 67.25px;">Status</th>
-                                                    <th style="width: 120.688px;" class="sorting" tabindex="0"
-                                                        aria-controls="add-row" rowspan="1" colspan="1"
-                                                        aria-label="Action: activate to sort column ascending">Action</th>
+                                                <tr>
+                                                    <th class="text-center" style="width: 10%">Kode</th>
+                                                    <th class="text-center" style="width: 15%">Nama</th>
+                                                    <th class="text-center" style="width: 10%">Paket</th>
+                                                    <th class="text-center" style="width: 15%">Tanggal</th>
+                                                    <th class="text-center" style="width: 25%">Status</th>
+                                                    <th class="text-center" style="width: 25%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">Airi Satou</td>
-                                                    <td>Accountant</td>
-                                                    <td>Tokyo</td>
-                                                    <td>2000/12/12</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-primary btn-lg"
-                                                                data-original-title="Edit Task">
-                                                                <i class="fa fa-edit"></i>
+                                                @foreach ($orders as $order)
+                                                    <tr>
+                                                        <td>{{ $order->id }}</td>
+                                                        <td>{{ $order->guest }}</td>
+                                                        <td>{{ $order->pack->name }}</td>
+                                                        <td>{{ $order->date }}</td>
+                                                        <td class="text-end">
+                                                            @if ($order->status === 'Pending')
+                                                                <a href="#" class="bg-warning p-2 rounded"
+                                                                    style="color:black">Pending</a>
+                                                            @elseif ($order->status === 'Dibayar')
+                                                                <a href="#" class="bg-success p-2 rounded"
+                                                                    style="color:black">Dibayar</a>
+                                                            @else
+                                                                <a href="#" class="bg-danger p-2 rounded"
+                                                                    style="color:black">Dibatalkan</a>
+                                                            @endif
+                                                            <button type="button" class="btn btn-link btn-success">
+                                                                <i class="fa-brands fa-whatsapp fa-2xl"></i>
                                                             </button>
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-danger"
-                                                                data-original-title="Remove">
-                                                                <i class="fa fa-times"></i>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-link btn-info">
+                                                                <i class="fa-solid fa-circle-exclamation fa-xl"></i>
                                                             </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="sorting_1">Ashton Cox</td>
-                                                    <td>Junior Technical Author</td>
-                                                    <td>San Francisco</td>
-                                                    <td>2000/12/12</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-primary btn-lg"
-                                                                data-original-title="Edit Task">
-                                                                <i class="fa fa-edit"></i>
+                                                            <button type="button" class="btn btn-link btn-secondary">
+                                                                <i class="fa-solid fa-pen-to-square fa-lg"></i>
                                                             </button>
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-danger"
-                                                                data-original-title="Remove">
-                                                                <i class="fa fa-times"></i>
+                                                            <button type="button" class="btn btn-link btn-danger"
+                                                                onclick="confirmDelete('{{ $order->id }}', 'order')">
+                                                                <i class="fa-solid fa-xmark fa-xl"></i>
                                                             </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">Brielle Williamson</td>
-                                                    <td>Integration Specialist</td>
-                                                    <td>New York</td>
-                                                    <td>2000/12/12</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-primary btn-lg"
-                                                                data-original-title="Edit Task">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-danger"
-                                                                data-original-title="Remove">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr role="row" class="even">
-                                                    <td class="sorting_1">Cedric Kelly</td>
-                                                    <td>Senior Javascript Developer</td>
-                                                    <td>Edinburgh</td>
-                                                    <td>2000/12/12</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-primary btn-lg"
-                                                                data-original-title="Edit Task">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-danger"
-                                                                data-original-title="Remove">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr role="row" class="odd">
-                                                    <td class="sorting_1">Colleen Hurst</td>
-                                                    <td>Javascript Developer</td>
-                                                    <td>San Francisco</td>
-                                                    <td>2000/12/12</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-primary btn-lg"
-                                                                data-original-title="Edit Task">
-                                                                <i class="fa fa-edit"></i>
-                                                            </button>
-                                                            <button type="button" data-bs-toggle="tooltip"
-                                                                title="" class="btn btn-link btn-danger"
-                                                                data-original-title="Remove">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

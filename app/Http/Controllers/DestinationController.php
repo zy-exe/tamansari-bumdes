@@ -18,4 +18,14 @@ class DestinationController extends Controller
             'destination'  => $destination,
         ]);
     }
+
+    public function del_destination($id)
+    {
+        $destination = Destination::findOrFail($id);
+        $destination->deleted = true;
+        $destination->save();
+
+        session()->flash('deletion', 'Data berhasil dihapus.');
+        return redirect('/admin-destinations');
+    }
 }

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('homestays', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->boolean('deleted')->default(false);
             $table->timestamps();
         });
     }

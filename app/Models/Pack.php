@@ -24,4 +24,7 @@ class Pack extends Model
         'fac_snack',
         'fac_merchandise',
     ];
+
+    public function order() {
+        return $this->hasMany(Order::class);}
 }

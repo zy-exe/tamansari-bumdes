@@ -19,4 +19,14 @@ class HomestayController extends Controller
             'homestays'    => $homestays,
         ]);
     }
+
+    public function del_homestay($id)
+    {
+        $homestay = Homestay::findOrFail($id);
+        $homestay->deleted = true;
+        $homestay->save();
+
+        session()->flash('deletion', 'Data berhasil dihapus.');
+        return redirect('/admin-homestays');
+    }
 }

@@ -21,35 +21,28 @@
                             <div id="add-row_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <table id="add-row" class="display table table-striped table-hover dataTable"
-                                            role="grid" aria-describedby="add-row_info">
+                                        <table id="myTable" class="table table-striped table-hover">
                                             <thead>
-                                                <tr role="row">
-                                                    <th class="sorting_asc" tabindex="0" aria-controls="add-row"
-                                                        aria-sort="ascending"
-                                                        aria-label="Name: activate to sort column descending"
-                                                        style="width: 680px;">Nama</th>
-                                                    <th class="sorting" tabindex="0" aria-controls="add-row"
-                                                        aria-label="Action: activate to sort column ascending">Action</th>
+                                                <tr>
+                                                    <th class="text-center" style="width: 75%">Nama</th>
+                                                    <th class="text-center" style="width: 25%">Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 @foreach ($destinations as $destination)
-                                                    <tr role="row" class="odd">
-                                                        <td class="sorting_1 fw-bold">{{ $destination->name }}</td>
-                                                        <td>
-                                                            <div class="form-button-action">
-                                                                <button type="button" data-bs-toggle="tooltip"
-                                                                    title="" class="btn btn-link btn-primary btn-lg"
-                                                                    data-original-title="Edit Task">
-                                                                    <i class="fa fa-edit"></i>
-                                                                </button>
-                                                                <button type="button" data-bs-toggle="tooltip"
-                                                                    title="" class="btn btn-link btn-danger"
-                                                                    data-original-title="Remove">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                            </div>
+                                                    <tr>
+                                                        <td>{{ $destination->name }}</td>
+                                                        <td class="text-center">
+                                                            <button type="button" class="btn btn-link btn-info">
+                                                                <i class="fa-solid fa-circle-exclamation fa-xl"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-link btn-secondary">
+                                                                <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-link btn-danger"
+                                                                onclick="confirmDelete('{{ $destination->id }}', 'dest')">
+                                                                <i class="fa-solid fa-xmark fa-xl"></i>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 @endforeach

@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             HomestaySeeder::class,
             DestinationSeeder::class,
             PackSeeder::class,
+            OrderSeeder::class,
         ]);
     }
 }

@@ -34,6 +34,13 @@
     <link rel="stylesheet" href="kaiadmin/css/plugins.min.css" />
     <link rel="stylesheet" href="kaiadmin/css/kaiadmin.min.css" />
 
+    <!-- Datatables css -->
+    <link href="https://cdn.datatables.net/2.1.5/css/dataTables.bootstrap5.css" rel="stylesheet" type="text/css" />
+
+    <!-- Sweetalert css -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet"
+        type="text/css" />
+
     {{-- CDN Font Awesome --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -41,7 +48,7 @@
 <body>
     <div class="wrapper">
         <!-- sidebar -->
-          @include('admin.component.sidebar')
+        @include('admin.component.sidebar')
         <!-- end sidebar -->
 
         <div class="main-panel">
@@ -68,12 +75,12 @@
                     <!-- End Logo Header -->
                 </div>
                 {{-- header --}}
-                  @include('admin.component.header')
+                @include('admin.component.header')
                 {{-- end header --}}
             </div>
 
             {{-- content --}}
-                @yield('content')
+            @yield('content')
             {{-- end content --}}
 
         </div>
@@ -82,38 +89,86 @@
     <script src="kaiadmin/js/core/jquery-3.7.1.min.js"></script>
     <script src="kaiadmin/js/core/popper.min.js"></script>
     <script src="kaiadmin/js/core/bootstrap.min.js"></script>
-    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> --}}
+
+    {{-- Datatables JS --}}
+    <script src="https://cdn.datatables.net/2.1.5/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.5/js/dataTables.bootstrap5.js"></script>
+
+    {{-- Sweetalert JS --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- jQuery Scrollbar -->
-    <script src="kaiadmin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script> --}}
 
     <!-- Chart JS -->
-    <script src="kaiadmin/js/plugin/chart.js/chart.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/chart.js/chart.min.js"></script> --}}
 
     <!-- jQuery Sparkline -->
-    <script src="kaiadmin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script> --}}
 
     <!-- Chart Circle -->
-    <script src="kaiadmin/js/plugin/chart-circle/circles.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/chart-circle/circles.min.js"></script> --}}
 
     <!-- Datatables -->
-    <script src="kaiadmin/js/plugin/datatables/datatables.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/datatables/datatables.min.js"></script> --}}
 
     <!-- Bootstrap Notify -->
-    <script src="kaiadmin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script> --}}
 
     <!-- jQuery Vector Maps -->
-    <script src="kaiadmin/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-    <script src="kaiadmin/js/plugin/jsvectormap/world.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/jsvectormap/jsvectormap.min.js"></script>
+    <script src="kaiadmin/js/plugin/jsvectormap/world.js"></script> --}}
 
     <!-- Sweet Alert -->
-    <script src="kaiadmin/js/plugin/sweetalert/sweetalert.min.js"></script>
+    {{-- <script src="kaiadmin/js/plugin/sweetalert/sweetalert.min.js"></script> --}}
 
     <!-- Kaiadmin JS -->
-    <script src="kaiadmin/js/kaiadmin.min.js"></script>
+    {{-- <script src="kaiadmin/js/kaiadmin.min.js"></script> --}}
 
+    {{-- Datatables script --}}
     <script>
+        new DataTable('#myTable', {
+            order: [], // disable sorting
+            autoWidth: false, // disable auto resize column width
+        });
+    </script>
+
+    {{-- Sweetalert script --}}
+    <script>
+        function confirmDelete(id, item) {
+            Swal.fire({
+                title: 'Yakin untuk menghapus?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Ya',
+                cancelButtonText: 'Tidak',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect to the delete link
+                    if (item === 'dest') {
+                      window.location.href = `/admin-destinations-delete/${id}`;
+                    } else if (item === 'pack') {
+                      window.location.href = `/admin-packages-delete/${id}`;
+                    } else if (item === 'homestay') {
+                      window.location.href = `/admin-homestays-delete/${id}`;
+                    } else if (item === 'order') {
+                      window.location.href = `/admin-orders-delete/${id}`;
+                    }
+                }
+            });
+        }
+
+        // Show SweetAlert if success session is set
+        @if (session('deletion'))
+            Swal.fire({
+                title: 'Sukses!',
+                text: '{{ session('deletion') }}',
+                icon: 'success',
+            });
+        @endif
+    </script>
+
+    {{-- <script>
         $(document).ready(function () {
           $("#basic-datatables").DataTable({});
   
@@ -169,7 +224,7 @@
             $("#addRowModal").modal("hide");
           });
         });
-      </script>
+      </script> --}}
 </body>
 
 </html>
