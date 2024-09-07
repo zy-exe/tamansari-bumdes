@@ -23,7 +23,7 @@ class HomestayController extends Controller
     public function del_homestay($id)
     {
         $homestay = Homestay::findOrFail($id);
-        $homestay->deleted = true;
+        $homestay->is_deleted = true;
         $homestay->save();
 
         session()->flash('deletion', 'Data berhasil dihapus.');

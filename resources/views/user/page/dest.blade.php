@@ -11,7 +11,7 @@
 
             {{-- Teks sub-judul --}}
             <div class="text-center mb-4">
-                <h5 class="subtitle-text">{{ $destination->desc }}</h5>
+                <h5 class="subtitle-text">{{ $destination->desc1 }}</h5>
             </div>
 
             {{-- Lightbox --}}
@@ -35,7 +35,7 @@
                     <h4>{{ $attraction->name }}</h4>
                     <p>{{ $attraction->desc }}</p>
                 @endforeach <hr>
-                <p>{{ $destination->invitation }}</p>
+                <p>{{ $destination->desc2 }}</p>
             </div>
 
         </div>

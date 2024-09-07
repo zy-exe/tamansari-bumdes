@@ -14,7 +14,7 @@ class AdminController extends Controller
         return view('admin.page.dashboard', ["page" => "dashboard"]); }
 
     public function show_destinations() {
-        $destinations  = Destination::where('deleted', false)->get();
+        $destinations  = Destination::where('is_deleted', false)->get();
 
         return view('admin.page.dest', [
             "page"           => "destinations",
@@ -23,7 +23,7 @@ class AdminController extends Controller
     }
 
     public function show_packages() {
-        $packages = Pack::where('deleted', false)->get();
+        $packages = Pack::where('is_deleted', false)->get();
 
         return view('admin.page.packages', [
             "page"     => "packages",
@@ -31,7 +31,7 @@ class AdminController extends Controller
         ]);
     }
     public function show_homestays() { 
-        $homestays = Homestay::where('deleted', false)->get();
+        $homestays = Homestay::where('is_deleted', false)->get();
         
         return view('admin.page.homestays', [
             "page" => "homestays",

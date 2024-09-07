@@ -16,18 +16,18 @@ class DestinationSeeder extends Seeder
         Destination::create([
             'name'       => 'Ijen Crater',
             'slug'       => 'ijen-crater',
-            'desc'       => "Experience the breathtaking <strong>Blue Flames</strong> and <strong>Tosca Lake of Ijen</strong>, East Java's hidden gem, <br> where adventure meets nature's raw beauty.",
-            'invitation' => "Join us at Ijen Crater and create memories that will last a lifetime. Book your adventure now and discover why this hidden gem of East Java is a must-visit destination for travelers from around the world.",]);
+            'desc1'      => "Experience the breathtaking <strong>Blue Flames</strong> and <strong>Tosca Lake of Ijen</strong>, East Java's hidden gem, <br> where adventure meets nature's raw beauty.",
+            'desc2'       => "Join us at Ijen Crater and create memories that will last a lifetime. Book your adventure now and discover why this hidden gem of East Java is a must-visit destination for travelers from around the world.",]);
         Destination::create([
             'name'       => 'Gandrung Terracotta Park',
             'slug'       => 'gandrung-terracotta-park',
-            'desc'       => "Enchanting cultural heritage of Banyuwangi <br> featuring <strong>1.000 Statues of Gandrung Dancer</strong> and <strong>Live Performance of Gandrung Dance</strong>.",
-            'invitation' => "Don't miss the opportunity to immerse yourself in the enchanting world of Gandrung Terracotta Park. Plan your visit today and discover why this unique cultural destination is a must-see for travelers from around the world. Experience the magic of Banyuwangi's heritage and create memories that will last a lifetime.",]);
+            'desc1'      => "Enchanting cultural heritage of Banyuwangi <br> featuring <strong>1.000 Statues of Gandrung Dancer</strong> and <strong>Live Performance of Gandrung Dance</strong>.",
+            'desc2'      => "Don't miss the opportunity to immerse yourself in the enchanting world of Gandrung Terracotta Park. Plan your visit today and discover why this unique cultural destination is a must-see for travelers from around the world. Experience the magic of Banyuwangi's heritage and create memories that will last a lifetime.",]);
         Destination::create([
             'name'       => 'Sendang Seruni',
             'slug'       => 'sendang-seruni',
-            'desc'       => "Discover the tranquil beauty and cultural richness of Sendang Seruni, <br> where crystal-clear <strong>natural springs</strong> and <strong>lush greenery</strong> offer a serene escape into nature's embrace.",
-            'invitation' => "Don't miss the opportunity to experience the unique charm of Sendang Seruni. Plan your visit today and immerse yourself in the natural beauty and cultural richness of Banyuwangi's serene oasis. Whether you're seeking adventure or tranquility, Sendang Seruni promises an unforgettable journey into the heart of East Java.",]);
+            'desc1'      => "Discover the tranquil beauty and cultural richness of Sendang Seruni, <br> where crystal-clear <strong>natural springs</strong> and <strong>lush greenery</strong> offer a serene escape into nature's embrace.",
+            'desc2'      => "Don't miss the opportunity to experience the unique charm of Sendang Seruni. Plan your visit today and immerse yourself in the natural beauty and cultural richness of Banyuwangi's serene oasis. Whether you're seeking adventure or tranquility, Sendang Seruni promises an unforgettable journey into the heart of East Java.",]);
 
         // destination attraction seed - 1 ijen
         DestinationAttraction::create([

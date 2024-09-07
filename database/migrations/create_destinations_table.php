@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug');
-            $table->text('desc');
-            $table->text('invitation');
-            $table->boolean('deleted')->default(false);
+            $table->text('desc1');
+            $table->text('desc2');
+            $table->boolean('is_deleted')->default(false);
             $table->timestamps();
         });
     }

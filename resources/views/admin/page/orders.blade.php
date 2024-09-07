@@ -88,7 +88,7 @@
                                                     <tr>
                                                         <td>{{ $order->id }}</td>
                                                         <td>{{ $order->guest }}</td>
-                                                        <td>{{ $order->pack->name }}</td>
+                                                        <td>{{ $order->pack->name_short }}</td>
                                                         <td>{{ $order->date }}</td>
                                                         <td class="text-end">
                                                             @if ($order->status === 'Pending')

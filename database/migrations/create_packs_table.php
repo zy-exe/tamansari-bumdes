@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->string('name');
+            $table->string('name_short');
             $table->text('desc');
             $table->integer('duration_days');
             $table->integer('duration_nights');
@@ -26,7 +27,7 @@ return new class extends Migration
             $table->integer('fac_meal');
             $table->integer('fac_snack');
             $table->boolean('fac_merchandise');
-            $table->boolean('deleted')->default(false);
+            $table->boolean('is_deleted')->default(false);
             $table->timestamps();
         });
     }

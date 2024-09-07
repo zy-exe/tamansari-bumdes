@@ -22,7 +22,7 @@ class DestinationController extends Controller
     public function del_destination($id)
     {
         $destination = Destination::findOrFail($id);
-        $destination->deleted = true;
+        $destination->is_deleted = true;
         $destination->save();
 
         session()->flash('deletion', 'Data berhasil dihapus.');

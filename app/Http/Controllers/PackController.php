@@ -21,7 +21,7 @@ class PackController extends Controller
     public function del_package($id)
     {
         $package = Pack::findOrFail($id);
-        $package->deleted = true;
+        $package->is_deleted = true;
         $package->save();
 
         session()->flash('deletion', 'Data berhasil dihapus.');
