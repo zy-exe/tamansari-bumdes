@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('duration_days');
             $table->integer('duration_nights');
             $table->integer('price');
-            $table->integer('min_book');
+            $table->integer('min_pax');
             $table->boolean('fac_homestay');
             $table->boolean('fac_guide');
             $table->boolean('fac_insurance');

@@ -36,7 +36,7 @@
                                                         <td>{{ $package->name }}</td>
                                                         <td class="text-center">Rp
                                                             {{ number_format($package->price, 0, ',', '.') }}</td>
-                                                        <td class="text-center">{{ $package->min_book }}</td>
+                                                        <td class="text-center">{{ $package->min_pax }}</td>
                                                         <td class="text-center">
                                                             <button type="button" class="btn btn-link btn-info">
                                                                 <i class="fa-solid fa-circle-exclamation fa-xl"></i>
